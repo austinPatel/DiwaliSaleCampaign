@@ -1,26 +1,29 @@
 # Diwali Sale Campaign
 
 ## Requirement 
-PHP Version 8.2 or later
-Laravel 11
-Composer 2.7.6
-MYSQL 8
-
+<ul>
+<li>PHP Version 8.2 or later</li>
+<li>Laravel 11 </li>
+<li>Composer 2.7.6</li>
+<li>MYSQL 8 </li>
+<ul>
 ## Enable the sodium extension in your php.ini for updating dependancy for laravel passport
 extension=sodium;
 
 ## In this Project you will be seen the robust application, follows best practices code standard which makes the code more maintainable and testable.
 For Example
 
-Dependency injection- Allows for better separation of concerns and makes the code more maintainable and testable.
-Services Class - that contains the business logic for processing the products and determining the discounted and payable items.
-Product Controller -The ProductController uses dependency injection to get an instance of the ProductService.
-Repository Pattern - Follow the repository pattern to organized and maintained through the seperating the data access layer from Business logic e.g
-UserRepository class - which is for the User registration and login.
+<p>Dependency injection- Allows for better separation of concerns and makes the code more maintainable and testable.</p>
+<p>Services Class - that contains the business logic for processing the products and determining the discounted and payable items.</p>
+<p>Product Controller -The ProductController uses dependency injection to get an instance of the ProductService.</p>
+<p>Repository Pattern - Follow the repository pattern to organized and maintained through the seperating the data access layer from Business logic e.g
+UserRepository class - which is for the User registration and login.</p>
 
-Create User Request - For the Better Validation rules defined in single places of user request class and make customized validation as well.
+<p>Create User Request - For the Better Validation rules defined in single places of user request class and make customized validation as well.</p>
 
-## To setup the project, follow the step as below.
+Install the Laravel Passport for better used of Oauth 2 server implementation for the application Authentication and Authorization that while required secure communication with third party application.
+
+## To setup the project, follow the below steps.
 
 ## Step-1  Clone the project from the repository
 git clone https://github.com/austinPatel/DiwaliSaleCampaign.git
@@ -32,12 +35,12 @@ composer install
 
 For Example:
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=diwalisalecampaign
-DB_USERNAME=root
-DB_PASSWORD=
+<p>DB_CONNECTION=mysql</p>
+<p>DB_HOST=127.0.0.1</p>
+<p>DB_PORT=3306</p>
+<p>DB_DATABASE=diwalisalecampaign</p>
+<p>DB_USERNAME=root</p>
+<p>DB_PASSWORD=</p>
 
 ## Step-4 Migrate the database to create schema in your database.
 php artisan migrate
@@ -55,14 +58,15 @@ User Registration - sign up the user account
 
 ## [/api/register](http://127.0.0.1:8000/api/register)
 
-Request Payload (Input Parameters)
+<p>Request Payload (Input Parameters)
 {
     "name":"XYZ",
     "email": "XYZ@localhost.com",
     "password":"123456",
     "confirm_password":"123456"
 }
-Response
+</p>
+<p>Response
 {
     "success": true,
     "data": {
@@ -76,6 +80,7 @@ Response
     },
     "message": "User Successfully register"
 }
+</p>
 
 User Login - User login
 ## [/api/login] (http://127.0.0.1:8000/api/login)
