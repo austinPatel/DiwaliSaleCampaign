@@ -72,9 +72,9 @@ Request Payload (Input Parameters)
 </p>
 
 <p>
+Response
 
 ```JSON
-Response
 {
     "success": true,
     "data": {
@@ -94,16 +94,18 @@ Response
 User Login - User login
 ## [/api/login] (http://127.0.0.1:8000/api/login)
 
-```JSON
-
 Request Payload
+
+```JSON
 {
     "email": "XYZ@localhost.com",
     "password":"123456",
 }
 ```
-```JSON
+
 Response
+
+```JSON
 {
     "success": true,
     "data": {
