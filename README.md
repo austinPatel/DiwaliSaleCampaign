@@ -6,7 +6,7 @@
 <li>Laravel 11 </li>
 <li>Composer 2.7.6</li>
 <li>MYSQL 8 </li>
-<ul>
+</ul>
 ## Enable the sodium extension in your php.ini for updating dependancy for laravel passport
 extension=sodium;
 
