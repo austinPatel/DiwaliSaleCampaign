@@ -109,7 +109,8 @@ Response
 
 ## [/api/buy-product] (http://127.0.0.1:8000/api/buy-product)
 
-Rule - 1 Customers can buy one product and get another product for free as long as the price of the free product is equal to or less than the price of the first product.
+<h3>Rule - 1 </h3>
+<p>Customers can buy one product and get another product for free as long as the price of the free product is equal to or less than the price of the first product.</p>
 
 Request Payload - Input
 
@@ -117,15 +118,17 @@ Request Payload - Input
     "products":[10, 20, 30, 40, 50, 60]
 }
 
-Rule 2 - Customers can buy one product and get another product for free as long as the price of the free product is less than the price of the first product
+<h3>Rule - 2 </h3>
+<p>Customers can buy one product and get another product for free as long as the price of the free product is less than the price of the first product.</p>
 
-Request Payload - Input
+<h4>Request Payload - Input</h4>
 
 {
     "products":[10, 20, 30, 40, 40, 50, 60, 60]
 }
 
-Rule 3 - Customers can buy two products and get two products for free as long as the price of the free product is less than the price of the first product
+<h3>Rule - 3 </h3> 
+<p>Customers can buy two products and get two products for free as long as the price of the free product is less than the price of the first product</p>
 
 Request Payload - Input
 {
