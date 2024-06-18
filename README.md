@@ -13,13 +13,13 @@ extension=sodium;
 ## In this Project you will be seen the robust application, follows best practices code standard which makes the code more maintainable and testable.
 For Example
 
-<p>`Dependency injection`- Allows for better separation of concerns and makes the code more maintainable and testable.</p>
-<p>`Services Class` - that contains the business logic for processing the products and determining the discounted and payable items.</p>
-<p>`Product Controller` -The ProductController uses dependency injection to get an instance of the ProductService.</p>
-<p>`Repository Pattern` - Follow the repository pattern to organized and maintained through the seperating the data access layer from Business logic e.g
+<p> **Dependency injection** - Allows for better separation of concerns and makes the code more maintainable and testable.</p>
+<p> **Services Class** - that contains the business logic for processing the products and determining the discounted and payable items.</p>
+<p> **Product Controller** -The ProductController uses dependency injection to get an instance of the ProductService.</p>
+<p> **Repository Pattern** - Follow the repository pattern to organized and maintained through the seperating the data access layer from Business logic e.g
 `UserRepository class` - which is for the User registration and login.</p>
 
-<p>`Create User Request` - For the Better Validation rules defined in single places of user request class and make customized validation as well.</p>
+<p> **Create User Request** - For the Better Validation rules defined in single places of user request class and make customized validation as well.</p>
 
 <p>Install the Laravel Passport for better used of Oauth 2 server implementation for the application Authentication and Authorization that while required secure communication with third party application.</p>
 
