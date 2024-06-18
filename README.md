@@ -13,15 +13,15 @@ extension=sodium;
 ## In this Project you will be seen the robust application, follows best practices code standard which makes the code more maintainable and testable.
 For Example
 
-<p>Dependency injection- Allows for better separation of concerns and makes the code more maintainable and testable.</p>
-<p>Services Class - that contains the business logic for processing the products and determining the discounted and payable items.</p>
-<p>Product Controller -The ProductController uses dependency injection to get an instance of the ProductService.</p>
-<p>Repository Pattern - Follow the repository pattern to organized and maintained through the seperating the data access layer from Business logic e.g
-UserRepository class - which is for the User registration and login.</p>
+<p>`Dependency injection`- Allows for better separation of concerns and makes the code more maintainable and testable.</p>
+<p>`Services Class` - that contains the business logic for processing the products and determining the discounted and payable items.</p>
+<p>`Product Controller` -The ProductController uses dependency injection to get an instance of the ProductService.</p>
+<p>`Repository Pattern` - Follow the repository pattern to organized and maintained through the seperating the data access layer from Business logic e.g
+`UserRepository class` - which is for the User registration and login.</p>
 
-<p>Create User Request - For the Better Validation rules defined in single places of user request class and make customized validation as well.</p>
+<p>`Create User Request` - For the Better Validation rules defined in single places of user request class and make customized validation as well.</p>
 
-Install the Laravel Passport for better used of Oauth 2 server implementation for the application Authentication and Authorization that while required secure communication with third party application.
+<p>Install the Laravel Passport for better used of Oauth 2 server implementation for the application Authentication and Authorization that while required secure communication with third party application.</p>
 
 ## To setup the project, follow the below steps.
 
@@ -43,10 +43,10 @@ For Example:
 <p>DB_PASSWORD=</p>
 
 ## Step-4 Migrate the database to create schema in your database.
-php artisan migrate
+`php artisan migrate`
 
 ## After all above step done, start the laravel server to execute and used the apiendpoint for this application.
-php artisan serve
+`php artisan serve`
 
 Copy the link which is given laravel server
 For example
@@ -56,17 +56,24 @@ http://127.0.0.1:8000/
 
 User Registration - sign up the user account
 
-## [/api/register](http://127.0.0.1:8000/api/register)
+## `[/api/register]`(http://127.0.0.1:8000/api/register)
 
-<p>Request Payload (Input Parameters)
+<p>
+```JSON 
+Request Payload (Input Parameters)
 {
     "name":"XYZ",
     "email": "XYZ@localhost.com",
     "password":"123456",
     "confirm_password":"123456"
 }
+```
 </p>
-<p>Response
+
+<p>
+
+```JSON
+Response
 {
     "success": true,
     "data": {
@@ -80,16 +87,21 @@ User Registration - sign up the user account
     },
     "message": "User Successfully register"
 }
+```
 </p>
 
 User Login - User login
 ## [/api/login] (http://127.0.0.1:8000/api/login)
+
+```JSON
 
 Request Payload
 {
     "email": "XYZ@localhost.com",
     "password":"123456",
 }
+```
+```JSON
 Response
 {
     "success": true,
@@ -106,31 +118,37 @@ Response
     },
     "message": "Successfully Login"
 }
+```
 
-## [/api/buy-product] (http://127.0.0.1:8000/api/buy-product)
+## `[/api/buy-product]` (http://127.0.0.1:8000/api/buy-product)
 
 <h3>Rule - 1 </h3>
 <p>Customers can buy one product and get another product for free as long as the price of the free product is equal to or less than the price of the first product.</p>
 
 <h4>Request Payload - Input</h4>
+```JSON
 
 {
     "products":[10, 20, 30, 40, 50, 60]
 }
+```
 
 <h3>Rule - 2 </h3>
 <p>Customers can buy one product and get another product for free as long as the price of the free product is less than the price of the first product.</p>
 
 <h4>Request Payload - Input</h4>
+```JSON
 
 {
     "products":[10, 20, 30, 40, 40, 50, 60, 60]
 }
-
+```
 <h3>Rule - 3 </h3> 
 <p>Customers can buy two products and get two products for free as long as the price of the free product is less than the price of the first product</p>
 
 <h4>Request Payload - Input</h4>
+```JSON
 {
     "products":[5, 5, 10, 20, 30, 40, 50, 50, 50, 60]
 }
+```
