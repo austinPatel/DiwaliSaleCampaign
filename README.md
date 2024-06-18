@@ -59,15 +59,16 @@ User Registration - sign up the user account
 ## `[/api/register]`(http://127.0.0.1:8000/api/register)
 
 <p>
-```JSON 
 Request Payload (Input Parameters)
+
+```JSON
 {
     "name":"XYZ",
     "email": "XYZ@localhost.com",
     "password":"123456",
     "confirm_password":"123456"
 }
-```
+``` 
 </p>
 
 <p>
@@ -126,8 +127,8 @@ Response
 <p>Customers can buy one product and get another product for free as long as the price of the free product is equal to or less than the price of the first product.</p>
 
 <h4>Request Payload - Input</h4>
-```JSON
 
+```JSON
 {
     "products":[10, 20, 30, 40, 50, 60]
 }
@@ -137,8 +138,8 @@ Response
 <p>Customers can buy one product and get another product for free as long as the price of the free product is less than the price of the first product.</p>
 
 <h4>Request Payload - Input</h4>
-```JSON
 
+```JSON
 {
     "products":[10, 20, 30, 40, 40, 50, 60, 60]
 }
@@ -147,6 +148,7 @@ Response
 <p>Customers can buy two products and get two products for free as long as the price of the free product is less than the price of the first product</p>
 
 <h4>Request Payload - Input</h4>
+
 ```JSON
 {
     "products":[5, 5, 10, 20, 30, 40, 50, 50, 50, 60]
