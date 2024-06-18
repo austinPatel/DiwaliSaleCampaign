@@ -125,10 +125,12 @@ Response
 
 ## `[/api/buy-product]` (http://127.0.0.1:8000/api/buy-product)
 
+
 <h3>Rule - 1 </h3>
 <p>Customers can buy one product and get another product for free as long as the price of the free product is equal to or less than the price of the first product.</p>
 
 <h4>Request Payload - Input</h4>
+<h4>Authorazation Token reqiured - After login user token will be generated.
 
 ```JSON
 {
